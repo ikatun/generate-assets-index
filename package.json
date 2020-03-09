@@ -1,0 +1,23 @@
+{
+  "name": "generate-assets-index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "build": "nnode --transpile",
+  "bin": {
+    "generate-assets-index": "./build/generate-assets-index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "nnode": "^0.3.3"
+  },
+  "dependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/lodash": "^4.14.149"
+  }
+}
