@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import glob from 'glob';
+import * as glob from 'glob';
 import path from 'path';
 import _ from 'lodash';
 import fs from 'fs';

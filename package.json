@@ -1,6 +1,6 @@
 {
   "name": "generate-assets-index",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -8,18 +8,23 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "nnode --transpile"
+    "build": "rm -rf build && tsc",
+    "start": "tsc-watch --onSuccess 'node build'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^13.9.0",
-    "nnode": "^0.3.3"
+    "@types/node": "^13.13.52",
+    "nnode": "^0.3.3",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "@types/glob": "^7.1.1",
     "@types/lodash": "^4.14.149",
     "glob": "^10.3.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.21"
   }
 }

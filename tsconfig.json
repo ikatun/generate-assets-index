@@ -1,15 +1,24 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2018",
     "module": "commonjs",
-    "lib": ["es2017", "es7", "es6", "dom", "esnext.asynciterable"],
     "declaration": true,
-    "outDir": "dist",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "incremental": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo",
+    "inlineSources": true,
+    "sourceMap": true
   },
-  "exclude": [
-    "node_modules",
-    "dist"
+  "include": [
+    "./src"
   ]
 }
