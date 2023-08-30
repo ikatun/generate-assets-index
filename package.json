@@ -1,6 +1,6 @@
 {
   "name": "generate-assets-index",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "@types/glob": "^7.1.1",
     "@types/lodash": "^4.14.149",
-    "glob": "^10.3.3"
+    "glob": "^10.3.3",
+    "lodash": "^4.17.21"
   }
 }
